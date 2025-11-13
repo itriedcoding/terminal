@@ -1,0 +1,18 @@
+:root{
+  --bg:#0b0f14; --fg:#c9d1d9; --accent:#3fb0ac;
+}
+html,body,#app{height:100%;margin:0;font-family:Inter, system-ui, Arial;}
+body{background:var(--bg);color:var(--fg)}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#07101a}
+header h1{margin:0;font-size:16px}
+#controls button{margin-left:8px}
+#connect{padding:10px 16px;background:#081218}
+#connect input,#connect textarea{margin-right:8px;padding:6px;border-radius:4px;border:1px solid #223; background:#0c1418;color:var(--fg)}
+#terminals{display:flex;height:60vh}
+#tabs{width:200px;padding:8px;background:#07121a;overflow:auto}
+.tab{display:block;width:100%;text-align:left;padding:8px;border:0;background:transparent;color:var(--fg);margin-bottom:6px}
+.tab.active{background:#0f2b2a}
+#panes{flex:1;padding:8px;background:#06121a;display:flex;flex-wrap:wrap}
+.terminal-container{flex:1 1 50%;min-width:300px;min-height:300px;border:1px solid #123;margin:6px}
+#cheatsheet{position:fixed;right:8px;bottom:8px;width:360px;max-height:40vh;overflow:auto;background:#06191a;padding:10px;border:1px solid #123}
+pre{white-space:pre-wrap;color:#bcd}
